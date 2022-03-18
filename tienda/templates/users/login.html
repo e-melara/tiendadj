@@ -1,0 +1,26 @@
+{% extends './base_users.html' %} {% block title %}Login{% endblock title %} {% load static %} 
+{%block content %}
+<h2>Ingrese con su cuenta de google</h2>
+<div>
+  <p>
+    <button
+      onclick="login();"
+      style="background-color: red; color: white; padding: 10px 20px"
+    >
+      Ingrese con google
+    </button>
+  </p>
+</div>
+{% endblock content %} {% block js %}
+<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-auth-compat.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"
+  integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="{% static 'js/app.js' %}"></script>
+{% endblock js %}

@@ -1,0 +1,7 @@
+**-env
+**/migrations/**
+**/.DS_Store
+tienda/secret.json
+**/__pycache__/**
+
+rest.http
